@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" loading="lazy" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<h2>Medicion de presion en un aire acondicionado </h2>
+	<h2> =================================== </h2>
+
+	<table class="columns">
+		<tr>
+			<td class="gauge" id="chart_baja" style="border: 1px solid #ccc"></td>
+			<td class="gauge" id="chart_alta" style="border: 1px solid #ccc"></td>
+	<!-- 		<td class="gauge" id="chart_Temp" style="border: 1px solid #ccc"></td>
+			<td class="gauge" id="chart_Pres" style="border: 1px solid #ccc"></td> -->
+		</tr>
+		
+	</table>
+
+<div class='contenedor'>
+		<div class="bulb">
+			<i id="light" class="fas fa-lightbulb"></i>
+		</div>
+		<div class="switch">
+			<input type="checkbox" id="check">
+			<label for="check"></label>
+		</div>
+	</div>
+
+
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script><script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCnJT2y0-oGUHCUlpePEmAz1pG82YUI-cg",
+    authDomain: "ejercicio1-e0980.firebaseapp.com",
+    projectId: "ejercicio1-e0980",
+    storageBucket: "ejercicio1-e0980.appspot.com",
+    messagingSenderId: "47390704187",
+    appId: "1:47390704187:web:53b2188a22ec48051c521e"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>	
